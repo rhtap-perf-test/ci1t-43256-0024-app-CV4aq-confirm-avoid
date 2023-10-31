@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-sycz
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-43256-0024-tenant/ci1t-43256-0024-app/devfile-sample-sycz@sha256:cd4b8dd5bfb17f7bc609498d32353ed4728e34669b7448acb7cd98d124eb1d76
+        name: my-nodejs
+        resources: {}
+status: {}
